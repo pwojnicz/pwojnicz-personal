@@ -1,0 +1,62 @@
+// --------------------------------------
+//   MODULES: repetitive elements
+// --------------------------------------
+.button
+   font-size: .8em
+   text-transform: uppercase
+   background: #fff
+   border: 1px solid $color_border
+   border-radius: 2px
+   padding: .5em 1.5em
+   display: inline-block
+
+   &:hover
+      border-color: $color_tertiary
+
+.socials
+   border-top: 2px dotted $color_border
+   margin: 3em auto 0
+   max-width: 200px
+
+   li
+      display: inline-block
+      margin: 3em .5em 0 .5em
+
+      a
+         border: 1px solid $color_border
+         border-radius: 50%
+         padding: .5em
+
+.spinner
+   text-align: center
+   width: 70px
+   margin: 2em auto 2em
+
+   & > div
+      width: 18px
+      height: 18px
+      background-color: $color_primary
+      border-radius: 100%
+      display: inline-block
+      -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both
+      animation: sk-bouncedelay 1.4s infinite ease-in-out both
+
+   .bounce1
+      -webkit-animation-delay: -0.32s
+      animation-delay: -0.32s
+
+   .bounce2
+      -webkit-animation-delay: -0.16s
+      animation-delay: -0.16s
+
+@keyframes sk-bouncedelay
+   0%, 80%, 100%
+      -webkit-transform: scale(0)
+      transform: scale(0)
+   40%
+      -webkit-transform: scale(1.0)
+      transform: scale(1.0)
+
+@import 'tools/aos'
+@import 'tools/devicon/devicon'
+@import 'tools/entypo/entypo'

@@ -1,0 +1,47 @@
+
+	Hi there! I'm glad you found this. I've build this website
+	by myself, but here's some stuff that I have used and found
+	it very helpful. In other words: just some credits for
+	good work of other people. Thanks!
+
+	Btw, I'm from Poland. If you like, you can reach me out at
+	kontakt@pwojnicz.pl
+
+_______________________________________________________________
+
+== TECHNOLOGY
+
+	AOS
+	https://github.com/michalsnik/aos/
+
+	Gulp
+	http://gulpjs.com/
+
+	jQuery
+	https://jquery.com/
+
+	Pug
+	https://jekyllrb.com/
+
+	Sass
+	http://sass-lang.com/
+
+_______________________________________________________________
+
+== IMAGES
+
+	Life of pix
+	http://lifeofpix.com/
+
+_______________________________________________________________
+
+== FONTS & ICONS
+
+	Catamaran
+	https://fonts.googleapis.com/css?family=Catamaran
+
+	Devicon
+	http://devicon.fr/
+
+	Entypo
+	http://www.entypo.com/

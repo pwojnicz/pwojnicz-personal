@@ -1,0 +1,85 @@
+// --------------------------------------
+//   RWD:
+// --------------------------------------
+
+// small devices: mobile
+
+@media (max-width: 350px)
+   #skills article li
+      float: none !important
+
+   #showcase .thumbs li
+      flex-basis: 100% !important
+
+@media (max-width: 570px)
+   body
+      font-size: 80%
+      word-wrap: break-word
+
+   #main_header nav span
+      display: none
+
+   #banner h1, #banner h2, #contact .mail
+      font-size: 1.4rem !important
+
+
+// medium devices: tablet
+
+@media (min-width: 571px)
+   #main_header nav i:not(.icon-mail)
+      display: none
+
+   #showcase .project_wrapper .text_box
+      display: flex
+
+      h2
+         text-align: right
+         text-transform: uppercase
+         border-bottom: 0
+         border-right: 1px solid $color_border
+         float: left
+         width: 25%
+         padding-right: 2em
+         margin: 0 2em 0 0
+
+   @media (max-width: 999px)
+      article li
+         width: 33.3% !important
+
+@media (max-width: 900px)
+   #main_header > *
+      text-align: center !important
+      float: none !important
+
+   #skills article
+      display: block
+
+   #showcase .thumbs li
+      flex-basis: 45%
+
+@media (max-width: $cont_width)
+   #showcase .thumbs ul
+      padding: 0 $box_padding
+
+
+// large devices: laptop, pc
+
+@media (min-width: 1000px)
+   body
+      margin-top: 2em
+
+   #main_header
+      width: 100%
+      z-index: 10
+      overflow: hidden
+      position: fixed
+      top: 0
+      transition: top 0.2s ease-in-out
+
+   .nav_up
+      position: fixed
+      top: -100px !important
+
+   .skills-wrapper
+      display: flex
+      justify-content: space-between

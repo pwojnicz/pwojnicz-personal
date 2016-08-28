@@ -1,0 +1,141 @@
+include _mixin.pug
+
+doctype html
+html(lang='pl')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge, chrome=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Paweł Wojnicz: front-end developer personal portfolio
+    meta(name='description', content='Nowoczesne, responsywne strony internetowe - planowanie, projektowanie oraz realizacja.')
+    meta(name='keywords', content="html5, css3, rwd, webdesign, 'ux design', 'front-end developer', portfolio, projektowanie, kodowanie, 'tworzenie stron www', internetowych, responsywne, freelancer, wordpress, opencart, cms")
+    link(rel='author', href='humans.txt')
+    link(rel='stylesheet', href='assets/css/main.min.css')
+  body#top
+
+    header#main_header.nav_down
+      .hgroup
+        a(href='/')
+          h1 paweł<strong>wojnicz</strong>
+          h2 front-end developer
+
+      nav
+        ul
+          li: a(href='#top', title='start')
+            i(class='icon icon-home')
+            span start
+          li: a(href='#skills', title='umiejętności')
+            i(class='icon icon-user')
+            span umiejętności
+          li: a(href='#showcase', title='wybrane prace')
+            i(class='icon icon-picture')
+            span wybrane prace
+          li: a(href='#contact', title='kontakt')
+            i(class='icon icon-mail')
+
+    section#banner.container
+      h1 Projektuję i wdrażam responsywne strony internetowe.
+      h2 + UI/UX design, programowanie.
+
+    section#skills.container
+      h1 technologie &amp; umiejętności
+
+      .text_box
+        .skills-wrapper
+          article
+            h2 front-end development:
+            ul
+              +skill('HTML5', 'bardzo dobrze')(icon="devicon-html5-plain")
+              +skill('CSS3', 'bardzo dobrze')(icon="devicon-css3-plain")
+              +skill('JavaScript', 'podstawy')(icon="devicon-javascript-plain")
+              +skill('jQuery', 'podstawy+')(icon="devicon-jquery-plain")
+              +skill('Sass', 'dobrze')(icon="devicon-sass-plain")
+              +skill('Gulp', 'podstawy')(icon="devicon-gulp-plain")
+              +skill('Frameworki', 'podstawy+')(icon="devicon-foundation-plain")
+              +skill('SEO', 'podstawy+')(icon="icon icon-search")
+              //+skill('Pug (Jade)', 'podstawy+')(icon="devicon-pug-plain")
+
+          article
+            h2 back-end / cms / programowanie:
+            ul
+              +skill('php', 'podstawy')(icon="devicon-php-plain")
+              +skill('Python', 'podstawy')(icon="devicon-python-plain")
+              +skill('SQL', 'dobrze')(icon="devicon-mysql-plain")
+              +skill('Wordpress', 'podstawy+')(icon="devicon-wordpress-plain")
+              +skill('Opencart', 'podstawy')(icon="icon icon-basket")
+              +skill('C / C++', 'podstawy+')(icon="devicon-cplusplus-plain")
+
+          article
+            h2 pozostałe:
+            ul
+              +skill('Github', 'podstawy')(icon="devicon-github-plain")
+              +skill('GNU/Linux', 'podstawy')(icon="devicon-linux-plain")
+              +skill('UI/UX design', 'podstawy')(icon="icon icon-pencil")
+              +skill('Photoshop', 'podstawy')(icon="devicon-photoshop-plain")
+              +skill('XML, XSLT', 'podstawy')(icon="icon icon-code")
+
+        aside
+          p
+            i(class='icon icon-heart')
+            | A co najważniejsze: chęć i motywacja do ciągłego uczenia się i odkrywania nowych rzeczy. Nie tylko ze świata IT :)
+
+    section#showcase
+      h1 wybrane prace
+
+      .showcase_slider
+        .thumbs: .container: .box
+          ul
+            li
+              a(href='#showcase', class='item', title='Więcej o Devmaster', data-skills='ux/ui design, photoshop', data-about='Poprzednia wersja mojego portfolio. Ostatecznie nie zostało wdrożone; w trakcie nastąpiła zmiana planów - jak zresztą widać :)')
+                img(src='assets/img/projects/devmaster/thumb.png', alt='Devmaster')
+                .item_about: h2 Devmaster
+            li
+              a(href='#showcase', class='item', title='Więcej o Ksionszki', data-skills='ux/ui design, photoshop' data-about='Projekt sprzed kilku lat zrobiony bez większego celu. Wciąż jednak się trzyma!')
+                img(src='assets/img/projects/ksionszki/thumb.png' alt='Ksionszki')
+                .item_about: h2 Ksionszki
+            li
+              a(href='#showcase', class='item', title='Więcej o Leed Player', data-skills='UX/UI design, Photoshop' data-about='W ramach przerwy od tworzenia stron: małe udoskonalenie i odświeżenie AIMP-a (pamięta ktoś jeszcze? :) Mimo wielkich planów, skończyło się tylko na projekcie.')
+                img(src='assets/img/projects/leed_player/thumb.png' alt='Leed Player')
+                .item_about: h2 Leed Player
+            li
+              a(href='#showcase', class='item', title='Więcej o Nowy Styl Polska', data-skills='UX/UI design, Photoshop, front-end (html5, css3, jQuery, RWD)' data-about='Strona stworzona na potrzebny producenta drzwi zza naszej wschodniej granicy.' data-online='pwojnicz.pl/online/nsp')
+                img(src='assets/img/projects/nowy_styl_polska/thumb.png' alt='Nowy Styl Polska')
+                .item_about: h2 Nowy Styl Polska
+            li
+              a(href='#showcase', class='item', title='Więcej o OpenCart Simple', data-skills='UX/UI design, Photoshop, front-end (html5, css3, jQuery, RWD), OpenCart, php' data-about='Pierwszy kontakt z cms przeznaczonym dla sklepów. Kiedyś na pewno skończę!')
+                img(src='assets/img/projects/opencart_simple/thumb.png' alt='OpenCart Simple')
+                .item_about: h2 OpenCart Simple
+            li
+              a(href='#showcase', class='item', title='Więcej o Restauracja ZSZIP', data-skills='UX/UI design, Photoshop, front-end (html5, css3, jQuery, RWD), php (formularz)' data-about='W tych czasach nawet mała, lokalna restauracja potrzebuje swojej strony internetowej :)')
+                img(src='assets/img/projects/restauracja_zszip/thumb.png' alt='Restauracja ZSZIP')
+                .item_about: h2 Restauracja ZSZIP
+
+        div(class='project_wrapper hidden'): .container
+          .text_box
+            h2
+            .about
+              p.description
+              p.skills Zakres prac: <span></span>
+              .online
+
+          a(href='#showcase', class='button go_back')
+            | &larr; Powrót do galerii
+          .project_images
+          a(href='#showcase', class='button go_back')
+            | &larr; Powrót do galerii
+
+    section#contact
+      h1 kontakt
+      .box
+        p Masz pytanie? Chcesz omówić i nawiązać współpracę? Napisz: <span class='email'><a href='mailto:kontakt@pwojnicz.pl'>kontakt@pwojnicz.pl</a></span>
+
+        aside.socials
+          ul
+            li: a(href='https://github.com/pwojnicz', title='Github', target='_blank'): i.devicon-github-plain
+
+    footer#main_footer
+      small 2016 &copy; <a href="/">paweł<strong>wojnicz</strong></a>
+
+    // JS scripts
+    script(src='https://code.jquery.com/jquery-3.1.0.min.js', integrity='sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=', crossorigin='anonymous')
+    script(src='assets/js/main.min.js')
